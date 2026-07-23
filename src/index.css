@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html, body, #root {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden;
+    @apply font-poppins text-cream;
+    background: radial-gradient(ellipse at top, #7a2244 0%, #4A1329 55%, #2c0b18 100%);
+  }
+}
+
+@layer components {
+  /* DIYA */
+  .flame {
+    background: radial-gradient(ellipse at 50% 70%, #fff6c9 0%, theme('colors.gold-light') 35%, #e0781f 70%, transparent 75%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    filter: drop-shadow(0 0 14px rgba(240,210,122,.85));
+  }
+  
+  /* GARLAND */
+  .marigold {
+    background: radial-gradient(circle at 35% 35%, theme('colors.gold-light'), theme('colors.gold') 60%, #a67b12 100%);
+    box-shadow: 0 0 0 3px rgba(74,19,41,.25) inset;
+  }
+  
+  /* CAKE */
+  .candle {
+    background: linear-gradient(#fff3d1, theme('colors.gold-light'));
+  }
+  .candle-flame {
+    background: radial-gradient(ellipse at 50% 70%, #fff6c9 0%, theme('colors.gold-light') 40%, #e0781f 75%, transparent 80%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    filter: drop-shadow(0 0 10px rgba(240,210,122,.8));
+  }
+  .tier1 {
+    background: linear-gradient(#fdf1f1, theme('colors.blush'));
+  }
+  .tier2 {
+    background: linear-gradient(#fff, #f6d9c9);
+  }
+  
+  /* LETTER */
+  .letter-card {
+    background: linear-gradient(180deg, #fffaf0, #fbeed2);
+    border: 1px solid theme('colors.gold');
+  }
+  .letter-card::-webkit-scrollbar { width: 5px; }
+  .letter-card::-webkit-scrollbar-thumb { background: theme('colors.gold'); border-radius: 4px; }
+  
+  /* MEMORIES */
+  .gallery-scroll::-webkit-scrollbar { height: 5px; }
+  .gallery-scroll::-webkit-scrollbar-thumb { background: theme('colors.gold'); border-radius: 4px; }
+  
+  /* FINALE */
+  .om-ring {
+    background: radial-gradient(circle, rgba(240,210,122,.25), transparent 70%);
+  }
+}
