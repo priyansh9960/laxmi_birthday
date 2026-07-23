@@ -202,8 +202,12 @@ function ScreenLetter({ isActive, onNext }) {
           <div className="letter-sign mt-[20px] font-rozha text-[16px] text-maroon text-right">— with love</div>
         </div>
       </div>
-      <div className="tap-hint mt-[28px] text-[12px] tracking-[.15em] uppercase text-gold-light opacity-70 animate-pulse">Tap to continue</div>
-      <div className="btn-tap-area absolute inset-0 cursor-pointer z-30" onClick={onNext}></div>
+      <button
+        onClick={onNext}
+        className="mt-[22px] py-[10px] px-[28px] rounded-[30px] border border-gold-light bg-transparent text-gold-light font-mukta text-[12px] tracking-[.15em] uppercase cursor-pointer animate-pulse z-30 relative"
+      >
+        Tap to continue
+      </button>
     </Screen>
   );
 }
