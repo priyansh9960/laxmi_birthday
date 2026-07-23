@@ -235,7 +235,7 @@ function ScreenFinale({ isActive, onRestart }) {
         </div>
         <h1 className="font-rozha font-normal m-0 text-[34px] text-gold-light">Happy Birthday, Laxmi</h1>
         <p className="subtitle font-mukta text-[15px] text-cream opacity-85 max-w-[340px] leading-[1.6] mt-[6px]">May your year shine as bright as this little lamp.</p>
-        <button className="replay-btn mt-[26px] py-[12px] px-[30px] rounded-[30px] border border-gold-light bg-transparent text-gold-light font-mukta text-[13px] tracking-[.1em] uppercase cursor-pointer transition-colors duration-300 hover:bg-gold-light hover:text-maroon-deep z-30 relative" onClick={onRestart}>Play again</button>
+        <button className="replay-btn mt-[26px] py-[12px] px-[30px] rounded-[30px] border border-gold-light bg-transparent text-gold-light font-mukta text-[13px] tracking-[.1em] uppercase cursor-pointer transition-colors duration-300 hover:bg-gold-light hover:text-maroon-deep z-30 relative" onClick={onRestart}>Thank you for being with me always</button>
       </div>
     </Screen>
   );
